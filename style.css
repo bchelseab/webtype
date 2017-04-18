@@ -1,0 +1,44 @@
+@charset "UTF-8";
+.visible {
+	display:block;
+}
+
+.hidden {
+	display:none;
+}
+
+
+body {
+	background-color:black;
+}
+
+#loadscrn {
+	width:48%;
+	margin-left:24%;
+  margin-right:24%;
+  background-color:white;
+  padding:4%;
+  text-align:center;
+}
+
+#box1 {
+	width:48%;
+	margin-left:24%;
+  margin-right:24%;
+  background-color:#cfcfcf;
+  padding:4%;
+  text-align:left;
+}
+
+#box2 {
+	width:48%;
+	margin-left:24%;
+  margin-right:24%;
+  background-color:pink;
+  padding:4%;
+  text-align:left;
+}
+
+h1 {
+	font-family: 'Spirax', cursive;
+}
