@@ -9,26 +9,85 @@
 
 
 body {
-	background-color:black;
-	font-family:'helvetica neue', helvetica, sans-serif;
+	font-family: 'Work Sans', sans-serif;
+	background: linear-gradient(270deg, #e8254c, #d4af28);
+	background-size:300% 300%;
+
+-webkit-animation: AnimationName 14s ease infinite;
+-moz-animation: AnimationName 14s ease infinite;
+animation: AnimationName 14s ease infinite;}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 74%}
+    50%{background-position:100% 27%}
+    100%{background-position:0% 74%}
 }
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 74%}
+    50%{background-position:100% 27%}
+    100%{background-position:0% 74%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 74%}
+    50%{background-position:100% 27%}
+    100%{background-position:0% 74%}
+}
+	
+
 
 #loadscrn {
 	width:48%;
 	margin-left:24%;
   margin-right:24%;
-  background-color:white;
+
   padding:4%;
   text-align:center;
+  color:white;
 }
 
+
 #box1 {
-	width:48%;
-	margin-left:24%;
-  margin-right:24%;
-  background-color:#cfcfcf;
+	width:100%;
+  background-color:white;
   padding:4%;
   text-align:left;
+  left:0;
+}
+
+header {
+	border-bottom: solid black 1px;
+	border-right: solid black 1px;
+	position:relative;
+	float:left;
+	padding-bottom:10%;
+	padding-right:5%;
+	margin-right:1%;
+	position:fixed;
+}
+
+header h1{
+	font-family: 'Work Sans', sans-serif;
+	font-weight:100;
+	font-size:50px;
+	margin:0px;
+}
+
+header h2{
+	font-family: 'Lato', sans-serif;
+	font-weight:normal;
+	text-align:right;
+	font-size:20px;
+	color:#B5B5B5;
+	margin-bottom:20%;
+}
+
+.song {
+	width: 40%;
+	margin-left:30%;
+}
+
+audio {
+	margin-top2%;
 }
 
 #box2 {
@@ -40,6 +99,90 @@ body {
   text-align:left;
 }
 
+#loadscrn h1 {
+	font-weight:100;
+	font-size:72px;
+}
+
+#loadscrn h2 {
+	font-weight:100;
+	font-size:24px;
+}
+
+.versea h4 {
+	font-family: 'Work Sans', sans-serif;
+	font-weight:100;
+	font-size:10px;
+
+}
+
+.side {
+	/* Safari */
+-webkit-transform: rotate(-90deg);
+
+/* Firefox */
+-moz-transform: rotate(-90deg);
+
+/* IE */
+-ms-transform: rotate(-90deg);
+
+/* Opera */
+-o-transform: rotate(-90deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+padding:0px;
+text-align:right;
+vertical-align:middle;
+}
+
+td {
+	margin:0px;
+	vertical-align:top;
+	top:0;
+}
+#direct {
+	width:50%;
+	margin-left:25%;
+	margin-right:25%;
+	margin-top:20%;
+	padding-top:1%;
+	padding-bottom:2%;
+	background-color:rgba(252,252,252,0.30);
+	border-radius:12px;
+	font-family: 'Lato', sans-serif;
+	transition:all ease 3s;
+	opacity:0;
+}
+
+form {
+	display:inline;
+}
+
+.loadbut {
+	background-color:transparent;
+	border:solid 1px white;
+	border-radius:12px;
+	color:white;
+	transition:all ease 0.3s;
+}
+
+.loadbut:hover {
+	border-color:#e8254c;
+	color:#e8254c;
+}
+
+#direct h3 {
+	font-weight:400;
+	font-size:14px;
+}
+
+td h5 {
+	top:0;
+	margin-top:0px;
+	
+}
+
 h5 {
 	font-weight:normal;
 }
@@ -49,10 +192,16 @@ h5 {
 	margin:1%;
 	padding-left:1%;
 	padding-right:1%;
+	padding-top:22%;
 	position:relative;
 	background-color:red;
 	display:inline-block;
-	overflow:hidden;
+	overflow:auto;
+}
+
+::-webkit-scrollbar {
+    display:none;
+	margin-left:-20px;
 }
 
 .chunk img {
@@ -61,6 +210,7 @@ h5 {
 	position:absolute;
 	top:0;
 	left:0;
+	z-index:1;
 	
 }
 
@@ -69,6 +219,11 @@ h5 {
 	
 }
 
-#help {
-	height:20px;
+.verse {
+	position:absolute;
+	top: 0;
+	padding-left:1%;
+	padding-right:1%;
+  transition:3.3s;
+  transition-timing-function:linear;
 }
