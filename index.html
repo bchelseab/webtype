@@ -24,8 +24,9 @@
             <h1>Self Control</h1>
             <h2>Frank Ocean - Blonde</h2>
                 <audio controls>
-                	<source src="11. All Night.mp3" type="audio/mpeg">
+                	<source src="FrankOceanSelfControl.mp3" type="audio/mpeg">
                 </audio>
+                <form><input type="button" class="dynobut" value="Dynamic" onClick="leggo('box1', 'box2')"></form>
         </header>
         <table class="song">
         	<tbody>
@@ -37,45 +38,58 @@
                         Could I make you shive last night?<br />
                         Could I make you shy on the last night, last night?<br />
                         Could we make it in? Do we have time?</h5></td>
-                 </tr>
+                 </tr></tbody></table>
+                 <table class="song">
+        	<tbody>
                  <tr class="versea" id="v2">   
-                    <td class="side"><h4>[Verse 1: Frank Ocean]</h4></td>
-                        <td><h5>I'll be the boyfriend in your wet dreams tonight<br />
+                    <td><h5>I'll be the boyfriend in your wet dreams tonight<br />
                         Noses on a rail, little virgin wears the white<br />
                         You cut your hair but you used to live a blonded life<br />
                         Wish I was there, wish we'd grown up on the same advice<br />
-                        And our time was right</h5></td>
-                 </tr>
+                        And our time was right</h5></td><td class="side"><h4>[Verse 1: Frank Ocean]</h4></td>
+                        
+                 </tr></tbody></table>
+                 <table class="song">
+        	<tbody>
                  <tr class="versea" id="v3">       
                     <td class="side"><h4>[Chorus: Austin Feinstein]</h4></td>
                         <td><h5>Keep a place for me, for me<br />
                         I'll sleep between y'all, it's no thing<br />
                         It's no thing, it's no thing<br />
                         Keep a place for me, for me</h5></td>
-                 </tr>
+                 </tr></tbody></table>
+                 <table class="song">
+        	<tbody>
                  <tr class="versea" id="v4">       
-                   <td class="side"> <h4>[Verse 2: Frank Ocean]</h4></td>
-                       <td> <h5>Now and then you miss it, sounds make you cry<br />
+                   <td> <h5>Now and then you miss it, sounds make you cry<br />
                         Some nights you dance with tears in your eyes<br />
                         I came to visit 'cause you see me like a UFO<br />
                         That's like never, 'cause I made you use your self control<br />
-                        And you made me lose my self control, my self control</h5></td>
-                 </tr>
+                        And you made me lose my self control, my self control</h5></td><td class="side"> <h4>[Verse 2: Frank Ocean]</h4></td>
+                       
+                 </tr></tbody></table>
+                 <table class="song">
+        	<tbody>
                  <tr class="versea" id="v5">      
-                    <td class="side"><h4>[Chorus: Austin Feinstein + Yung Lean]</h4></td>
+                    <td class="side"><h4>[Chorus: Austin Feinstein
+                    <br /> + Yung Lean]</h4></td>
                        <td> <h5>Keep a place for me, for me<br />
                         I'll sleep between y'all, it's no thing<br />
                         Keep a place for me<br />
                         It's nothing, it's no thing<br />
                         It's nothing, it's no thing</h5></td>
-                  </tr>
+                  </tr></tbody></table>
+                  <table class="song">
+        	<tbody>
                   <tr class="versea" id="v6">      
-                   <td class="side"> <h4>[Bridge]</h4></td>
-                        <td><h5>Sometimes you'll miss it and the sound<br />
+                   <td><h5>Sometimes you'll miss it and the sound<br />
                         Will make you cry<br />
                         And some nights you're dancing<br />
-                        With tears in your eyes</h5></td>
-                </tr>
+                        With tears in your eyes</h5></td><td class="side"> <h4>[Bridge]</h4></td>
+                        
+                </tr></tbody></table>
+                <table class="song">
+        	<tbody>
                 <tr class="versea" id="v7">     
                     <td class="side"><h4>[Outro: Frank Ocean]</h4></td>
                         <td><h5>I, I, I<br />
@@ -104,84 +118,80 @@
                 </tr>
                 </tbody>
                 </table>
-        </div>
-        <form><input type="button" value="Dynamic" onClick="leggo('box1', 'box2')"></form>
     
     </div>
     
     <div id="box2" class="hidden">
     	<header>
-        
-            <h1>Self Control</h1>
-            <h2>Frank Ocean - Blonde</h2>
                 <audio controls>
-                	<source src="11. All Night.mp3" type="audio/mpeg">
+                	<source src="FrankOceanSelfControl.mp3" type="audio/mpeg">
                 </audio>
         </header>
-        <div class="chunk" id="help"><img src="bg1.jpg" id="pic"/>
+        <div class="chunk" onMouseOver="react('za')" onMouseOut="unreact('za')" id="help"><img src="bg1.jpg" />
         <div class="verse" id="va">
-            <h4>[Intro: Frank Ocean]</h4>
+       
                 <h5>Pool side convo about your summer last night, oh yeah<br />
                 About your summer last night<br />
                 Ain't give you no play, mm<br />
                 Could I make you shive last night?<br />
                 Could I make you shy on the last night, last night?<br />
-                Could we make it in? Do we have time?</h5>
+                Could we make it in? <span id="za">Do we have time?</span></h5>
          </div></div>
-         <div class="chunk">
-        <img src="bg.jpg" />
+         <div class="chunk" onMouseOver="react('zb')" onMouseOut="unreact('zb')">
+       
+        <img src="bg2.jpg" />
          <div class="verse" id="vb">   
-            <h4>[Verse 1: Frank Ocean]</h4>
+            
                 <h5>I'll be the boyfriend in your wet dreams tonight<br />
                 Noses on a rail, little virgin wears the white<br />
-                You cut your hair but you used to live a blonded life<br />
+                You cut your hair but <span id="zb">you used to live a blonded life</span><br />
                 Wish I was there, wish we'd grown up on the same advice<br />
                 And our time was right</h5>
          </div></div>
-         <div class="chunk">
-        <img src="bg.jpg" />
+         <div class="chunk" onMouseOver="react('zc')" onMouseOut="unreact('zc')">
+        <img src="bg3.jpg" />
          <div class="verse" id="vc">       
-            <h4>[Chorus: Austin Feinstein]</h4>
+            
                 <h5>Keep a place for me, for me<br />
-                I'll sleep between y'all, it's no thing<br />
+                I'll sleep between y'all, <span id="zc">it's no thing</span><br />
                 It's no thing, it's no thing<br />
                 Keep a place for me, for me</h5>
          </div></div>
-         <div class="chunk">
-        <img src="bg.jpg" />
+         <div class="chunk" onMouseOver="react('zd')" onMouseOut="unreact('zd')">
+        <img src="bg4.jpg" />
          <div class="verse" id="vd">       
-            <h4>[Verse 2: Frank Ocean]</h4>
+            
                 <h5>Now and then you miss it, sounds make you cry<br />
                 Some nights you dance with tears in your eyes<br />
                 I came to visit 'cause you see me like a UFO<br />
-                That's like never, 'cause I made you use your self control<br />
+                <span id="zd">That's like never</span>, 'cause I made you use your self control<br />
                 And you made me lose my self control, my self control</h5>
          </div></div>
-         <div class="chunk">
-        <img src="bg.jpg" />
+         <div class="chunk" onMouseOver="react('ze')" onMouseOut="unreact('ze')">
+        <img src="bg5.jpg" />
          <div class="verse" id="ve">      
-            <h4>[Chorus: Austin Feinstein + Yung Lean]</h4>
+            
                 <h5>Keep a place for me, for me<br />
                 I'll sleep between y'all, it's no thing<br />
-                Keep a place for me<br />
+                <span id="ze">Keep a place for me</span><br />
                 It's nothing, it's no thing<br />
                 It's nothing, it's no thing</h5>
           </div></div>
-          <div class="chunk">
-        <img src="bg.jpg" />
+          <div class="chunk" onMouseOver="react('zf')" onMouseOut="unreact('zf')">
+        <img src="bg6.jpg" />
           <div class="verse" id="vf">      
-            <h4>[Bridge]</h4>
+            
                 <h5>Sometimes you'll miss it and the sound<br />
                 Will make you cry<br />
                 And some nights you're dancing<br />
-                With tears in your eyes</h5>
+                With <span id="zf">tears in your eyes</span></h5>
         </div></div>
-        <div class="chunk">
-        <img src="bg.jpg" />
+        <div class="chunk" onMouseOver="react('zg')" onMouseOut="unreact('zg')">
+        <img src="bg7.jpg" />
         <div class="verse" id="vg">     
-            <h4>[Outro: Frank Ocean]</h4>
+            
                 <h5>I, I, I<br />
-                Know you gotta leave, leave, leave<br />
+                <span id="zg">Know you gotta leave</span>, leave, leave<br />
                 Take down some summer time<br />
                 Give up, just tonight, night, night<br />
                 I, I, I<br />
@@ -192,8 +202,8 @@
                 Take down some summer time<br />
                 Give up, just tonight, night, night<br />
             </h5></div></div>
-            <div class="chunk">
-        <img src="bg.jpg" />
+            <div class="chunk" onMouseOver="react('zh')" onMouseOut="unreact('zh')">
+        <img src="bg8.jpg" />
         <div class="verse" id="vh">   
                 <h5>I, I, I<br />
                 Know you got someone comin'<br />
@@ -202,13 +212,13 @@
                 I, I, I<br />
                 Know you gotta leave, leave, leave<br />
                 Take down some summer time<br />
-                Give up, just tonight, night, night<br />
+                Give up, <span id="zh">just tonight</span>, night, night<br />
                 I, I, I<br />
                 Know you got someone comin'<br />
                 You're spitting game, know you got it</h5>
         </div></div>
         
-        <form><input type="button" value="View Unadorned" onClick="leggo('box2', 'box1')"></form>
+        <form><input type="button" class="plainbut" value="View Unadorned" onClick="leggo('box2', 'box1')"></form>
     </div>
 
 
@@ -231,6 +241,7 @@
 	}
 			else {
 				document.body.style.background = "linear-gradient(270deg, #e8254c, #d4af28)";
+				document.body.style.backgroundSize = "300% 300%";
 			};
 	};
 	
@@ -239,7 +250,14 @@
 		x.style.opacity = 1;
 	};
 	
+	function react(phrase) {
+		document.getElementById(phrase).style.transition = 'all ease 1s';
+		document.getElementById(phrase).style.fontSize = '32px';
+	};
 	
+	function unreact(phrase) {
+		document.getElementById(phrase).style.fontSize = '0.83em';
+	};
 	
 	
 </script>

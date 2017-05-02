@@ -44,61 +44,6 @@ animation: AnimationName 14s ease infinite;}
   text-align:center;
   color:white;
 }
-
-
-#box1 {
-	width:100%;
-  background-color:white;
-  padding:4%;
-  text-align:left;
-  left:0;
-}
-
-header {
-	border-bottom: solid black 1px;
-	border-right: solid black 1px;
-	position:relative;
-	float:left;
-	padding-bottom:10%;
-	padding-right:5%;
-	margin-right:1%;
-	position:fixed;
-}
-
-header h1{
-	font-family: 'Work Sans', sans-serif;
-	font-weight:100;
-	font-size:50px;
-	margin:0px;
-}
-
-header h2{
-	font-family: 'Lato', sans-serif;
-	font-weight:normal;
-	text-align:right;
-	font-size:20px;
-	color:#B5B5B5;
-	margin-bottom:20%;
-}
-
-.song {
-	width: 40%;
-	margin-left:30%;
-}
-
-audio {
-	margin-top2%;
-}
-
-#box2 {
-	width:80%;
-	margin-left:10%;
-  margin-right:10%;
-  background-color:pink;
-  padding:4%;
-  text-align:left;
-}
-
 #loadscrn h1 {
 	font-weight:100;
 	font-size:72px;
@@ -107,39 +52,6 @@ audio {
 #loadscrn h2 {
 	font-weight:100;
 	font-size:24px;
-}
-
-.versea h4 {
-	font-family: 'Work Sans', sans-serif;
-	font-weight:100;
-	font-size:10px;
-
-}
-
-.side {
-	/* Safari */
--webkit-transform: rotate(-90deg);
-
-/* Firefox */
--moz-transform: rotate(-90deg);
-
-/* IE */
--ms-transform: rotate(-90deg);
-
-/* Opera */
--o-transform: rotate(-90deg);
-
-/* Internet Explorer */
-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-padding:0px;
-text-align:right;
-vertical-align:middle;
-}
-
-td {
-	margin:0px;
-	vertical-align:top;
-	top:0;
 }
 #direct {
 	width:50%;
@@ -155,7 +67,7 @@ td {
 	opacity:0;
 }
 
-form {
+#loadscrn form {
 	display:inline;
 }
 
@@ -177,16 +89,162 @@ form {
 	font-size:14px;
 }
 
-td h5 {
+#box1 {
+	width:100%;
+  background-color:white;
+  padding:4%;
+  text-align:left;
+  left:0;
+}
+
+#box1 header {
+	border-bottom: solid black 1px;
+	border-right: solid black 1px;
+	position:relative;
+	float:left;
+	padding-bottom:10%;
+	padding-right:5%;
+	margin-right:1%;
+	position:fixed;
+}
+
+#box1 header h1{
+	font-family: 'Work Sans', sans-serif;
+	font-weight:100;
+	font-size:50px;
+	margin:0px;
+	
+	transition:all ease .5s;
+}
+
+#box1 header h1:hover{
+	text-shadow: 0 0 5px rgba(0,0,0,0.5);
+	color:transparent;
+}
+
+#box1 header h2{
+	font-family: 'Lato', sans-serif;
+	font-weight:normal;
+	text-align:right;
+	font-size:20px;
+	color:#B5B5B5;
+	margin-bottom:20%;
+}
+
+#box1 .song {
+	xwidth: 40%;
+	margin-left:40%;
+}
+
+#box1audio {
+	margin-top:2%;
+}
+
+
+
+
+
+.versea h4 {
+	font-family: 'Work Sans', sans-serif;
+	font-weight:100;
+	font-size:10px;
+
+}
+
+#box1 table {
+	border-collapse:collapse;
+	margin-bottom:35px;
+	color: transparent;
+   text-shadow: 0 0 5px rgba(0,0,0,0.5);
+	transition:all ease .5s;
+}
+
+.side {
+	/* Safari */
+-webkit-transform: rotate(-90deg);
+
+/* Firefox */
+-moz-transform: rotate(-90deg);
+
+/* IE */
+-ms-transform: rotate(-90deg);
+
+/* Opera */
+-o-transform: rotate(-90deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+padding:0px;
+text-align:center;
+vertical-align:middle;
+
+}
+
+#box1 td {
+	margin:0px;
 	top:0;
-	margin-top:0px;
 	
 }
+
+#box1 table:hover {
+	color:black;
+	text-shadow:none;
+	
+}
+
+#box1 tr {
+	table-layout:fixed;
+}
+
+
+
+#box1 td h5 {
+	top:0;
+	margin-top:0px;
+	line-height:20px;
+}
+
+.dynobut {
+	background-color:transparent;
+	border:solid 1px black;
+	border-radius:12px;
+	color:black;
+	transition:all ease 0.3s;
+	bottom:0;
+	right:0;
+}
+
+.dynobut:hover {
+	border-color:#939393;
+	color:#939393;
+}
+
+.plainbut {
+	background-color:transparent;
+	border:solid 1px white;
+	border-radius:12px;
+	color:white;
+	transition:all ease 0.3s;
+	bottom:0;
+	right:0;
+}
+
+.plainbut:hover {
+	border-color:#d4af28;
+	color:#d4af28;
+}
+
 
 h5 {
 	font-weight:normal;
 }
-
+#box2 {
+	width:80%;
+	margin-left:10%;
+  margin-right:10%;
+  padding:4%;
+  text-align:left;
+}
 .chunk {
 	width:20%;
 	margin:1%;
@@ -194,19 +252,23 @@ h5 {
 	padding-right:1%;
 	padding-top:22%;
 	position:relative;
-	background-color:red;
 	display:inline-block;
 	overflow:auto;
 }
 
-::-webkit-scrollbar {
+#box2 ::-webkit-scrollbar {
     display:none;
 	margin-left:-20px;
 }
 
+.chunk h5 {
+	color: white;
+	font-family:'lato', sans-serif;
+	font-weight:normal;
+}
 .chunk img {
 	width:100%;
-	transition:all ease 0.3s;
+	transition:all ease 0.4s;
 	position:absolute;
 	top:0;
 	left:0;
@@ -226,4 +288,8 @@ h5 {
 	padding-right:1%;
   transition:3.3s;
   transition-timing-function:linear;
+}
+
+#box2 audio {
+	background-color:transparent;
 }
